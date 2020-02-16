@@ -22,5 +22,6 @@ void Multiplication() {
 		mov mult, ax
 	}
 
+	printf("\nРезультат:");
 	printf("\n%d * %d = %d", a, b, mult);
 }
