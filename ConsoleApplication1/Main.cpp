@@ -11,7 +11,7 @@ int main(int answer) {
 	void Division(), Multiplication();
 	void BigMultiplication();
 	void task1(), task2();
-
+	
 	cout << " ****   **  **  **  **   ****   **  **  ******  *****\n";
 	cout << "**  **   ** **   ****   **  **  **  **  **      **  **\n";
 	cout << "**        ****    **    ******   *****  ****    *****\n";
