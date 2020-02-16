@@ -23,5 +23,6 @@ void BigMultiplication() {
 		mov bigmult, edx
 	}
 
+	printf("\nРезультат:");
 	printf("\n%d * %d = %d", a, b, bigmult);
 }
