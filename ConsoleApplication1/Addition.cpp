@@ -21,5 +21,6 @@ void Addition() {
 		mov sum, eax;
 	}
 
+	printf("\nРезультат:");
 	printf("\n%d + %d = %d", a, b, sum);
 }
