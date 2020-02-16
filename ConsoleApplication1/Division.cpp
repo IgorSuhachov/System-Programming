@@ -26,6 +26,7 @@ void Division() {
 		mov rem, edx
 	}
 
+	printf("\nРезультат:");
 	printf("\n%d / %d = %d", a, b, divis);
 	printf("\nОстаток: %d", rem);
 }
