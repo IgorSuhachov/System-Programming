@@ -21,5 +21,6 @@ void Subtraction() {
 		mov subt, eax;
 	}
 
+	printf("\nРезультат:");
 	printf("\n%d - %d = %d", a, b, subt);
 }
