@@ -83,9 +83,11 @@ int main(int answer) {
 		case 0:
 			exit(0);
 			break;
+
 		default:
 			cout << "Неверный пункт меню" << endl;
 		}
 	}
+
 	return 0;
 }
