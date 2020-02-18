@@ -1,12 +1,13 @@
 ﻿#include <iostream>
-#include <conio.h>
 
 using namespace std;
 
-int main(int answer) {
+int main() {
 	system("color 2");
 
 	setlocale(LC_ALL, "rus");
+	
+	int answer;
 
 	void Addition(), Subtraction();
 	void Division(), Multiplication();
