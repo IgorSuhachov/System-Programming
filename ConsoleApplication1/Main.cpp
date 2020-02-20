@@ -15,9 +15,9 @@ int main() {
 	void task1(), task2();
 	void Menu(), Initials();
 	
-	Initials();
-
 	while(true) {
+		Initials();
+
 		Menu();
 
 		cin >> answer;
