@@ -30,6 +30,8 @@ void Division() {
 	printf("\n%d / %d = %d", a, b, divis);
 	printf("\nОстаток: %d", rem);
 	cout << "\nНажмите любую клавишу для перехода в меню" << endl;
+
 	system("pause");
+
 	system("cls");
 }
