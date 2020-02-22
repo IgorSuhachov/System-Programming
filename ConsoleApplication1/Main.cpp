@@ -13,11 +13,9 @@ int main() {
 	void Division(), Multiplication();
 	void BigMultiplication();
 	void task1(), task2();
-	void Menu(), Initials();
+	void Menu();
 	
 	while(true) {
-		Initials();
-
 		Menu();
 
 		cin >> answer;
