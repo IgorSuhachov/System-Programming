@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include <string>
 #include <windows.h>
 
 using namespace std;
@@ -37,22 +36,22 @@ int main() {
 			}
 		}
 
-		while (true) {
-			if (GetAsyncKeyState(VK_UP) != 0) {
+		while (true) { // Movement
+			if (GetAsyncKeyState(VK_UP) != 0) { // control Up
 				answer -= 1;
 
 				if (answer == -1)
 					answer = 9;
 				break;
 
-			} else if (GetAsyncKeyState(VK_DOWN) != 0) {
+			} else if (GetAsyncKeyState(VK_DOWN) != 0) { // control Down
 				answer += 1;
 
 				if (answer == 9)
 					answer = 0;
 				break;
 
-			} else if (GetAsyncKeyState(VK_RETURN) != 0) {
+			} else if (GetAsyncKeyState(VK_RETURN) != 0) { // control Enter
 				switch (answer) {
 				case 1:
 					Addition();
@@ -85,7 +84,6 @@ int main() {
 				case 8:
 					exit(0);
 					break;
-					return 0;
 
 				case 9:
 					break;
@@ -98,4 +96,6 @@ int main() {
 
 		Sleep(150);
 	}
+
+	return 0;
 }
