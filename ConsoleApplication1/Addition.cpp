@@ -23,10 +23,4 @@ void Addition() {
 
 	printf("\nРезультат:");
 	printf("\n%d + %d = %d", a, b, sum);
-
-	cout << "\nНажмите любую клавишу для перехода в меню" << endl;
-
-	system("pause");
-
-	system("cls");
 }
