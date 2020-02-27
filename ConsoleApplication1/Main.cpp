@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <conio.h>
 #include <windows.h>
 
 using namespace std;
@@ -16,7 +17,7 @@ int main() {
 		system("cls");
 
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
-
+		
 		Initials();
 
 		Menu();
@@ -24,9 +25,10 @@ int main() {
 		for (int i = 0; i < 5; ++i) {
 			string menu[5] = { "| \t1. Калькулятор \t\t|","| \t2. Практическая 1 \t|","| \t3. Практическая 2 \t|",
 				"| \t4. Возведение в степень |","| \t5. Выход \t\t|" };
+			cout << endl;
 
 			if (i == answer) {
-				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 3);
+				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6);
 				cout << menu[i];
 			}
 			else {
