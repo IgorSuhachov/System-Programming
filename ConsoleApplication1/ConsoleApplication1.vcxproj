@@ -147,14 +147,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Addition.cpp" />
-    <ClCompile Include="BigMultiplication.cpp" />
-    <ClCompile Include="Division.cpp" />
+    <ClCompile Include="Calculator.cpp" />
     <ClCompile Include="Initials.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Multiplication.cpp" />
-    <ClCompile Include="Subtraction.cpp" />
+    <ClCompile Include="Power.cpp" />
     <ClCompile Include="task1.cpp" />
     <ClCompile Include="task2.cpp" />
   </ItemGroup>
