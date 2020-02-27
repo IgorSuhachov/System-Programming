@@ -3,5 +3,6 @@
 using namespace std;
 
 void Power() {
-	cout << "Степень" << endl;
+	cout << "\n\nСтепень" << endl;
+	system("pause");
 }
