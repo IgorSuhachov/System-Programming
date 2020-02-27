@@ -24,12 +24,12 @@ int main() {
 		for (int i = 0; i < 5; ++i) {
 			string menu[5] = { "| \t1. Калькулятор \t\t|","| \t2. Практическая 1 \t|","| \t3. Практическая 2 \t|",
 				"| \t4. Возведение в степень |","| \t5. Выход \t\t|" };
-			cout << endl;
 
 			if (i == answer) {
 				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 3);
 				cout << menu[i];
-			} else {
+			}
+			else {
 				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 				cout << menu[i];
 			}
@@ -43,42 +43,39 @@ int main() {
 					answer = 5;
 				break;
 
-			} else if (GetAsyncKeyState(VK_DOWN) != 0) { // control Down
+			}
+			else if (GetAsyncKeyState(VK_DOWN) != 0) { // control Down
 				answer += 1;
 
-				if (answer == 5)
+				if (answer == 6)
 					answer = 0;
 				break;
 
-			} else if (GetAsyncKeyState(VK_RETURN) != 0) { // control Enter
+			}
+			else if (GetAsyncKeyState(VK_RETURN) != 0) { // control Enter
 				switch (answer) {
-				case 1:
+				case 0:
 					Calculator();
 					break;
 
-				case 2:
+				case 1:
 					task1();
 					break;
 
-				case 3:
+				case 2:
 					task2();
 					break;
 
-				case 4:
+				case 3:
 					Power();
 					break;
 
-				case 5:
+				case 4:
 					exit(0);
 					break;
 				}
 			}
 		}
-
-		if (answer !=5)
-			system("pause");
-
-		Sleep(150);
 	}
 
 	return 0;
