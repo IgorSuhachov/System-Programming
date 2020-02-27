@@ -3,5 +3,6 @@
 using namespace std;
 
 void task1() {
-	cout << "Практическая 1" << endl;
+	cout << "\n\nПрактическая 1" << endl;
+	system("pause");
 }
