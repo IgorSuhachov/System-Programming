@@ -7,11 +7,13 @@ void Calculator() {
 	int sum, subt, bigmult;
 	int rem, divis;
 
-	cout << "\nВведите a и b" << endl;
-	cin >> a >> b;
+	cout << "\n\nВведите a: ";
+	cin >> a;
 
+	cout << "\nВведите b: ";
+	cin >> b;
 
-	cout << "Сложение:";
+	cout << "\nСложение:";
 	_asm {
 		xor eax, eax;
 
@@ -98,4 +100,6 @@ void Calculator() {
 
 	printf("\nРезультат:");
 	printf("\n%d * %d = %d", a1, b1, bigmult);
+
+	system("pause");
 }
