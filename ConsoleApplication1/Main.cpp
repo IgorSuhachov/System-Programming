@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include <conio.h>
 #include <windows.h>
 
 using namespace std;
@@ -9,14 +8,12 @@ int main() {
 
 	int answer{ 0 };
 
-	void task1(), task2();
 	void Menu(), Initials();
+	void task1(), task2();
 	void Calculator(), Power();
 
 	while (true) {
 		system("cls");
-
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 		
 		Initials();
 
