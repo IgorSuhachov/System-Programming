@@ -1,8 +1,12 @@
 #include <iostream>
+#include <windows.h>
 
 using namespace std;
 
 void Initials() {
+
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
+
 	cout << " ****   **  **  **  **   ****   **  **  ******  *****\n";
 	cout << "**  **   ** **   ****   **  **  **  **  **      **  **\n";
 	cout << "**        ****    **    ******   *****  ****    *****\n";
