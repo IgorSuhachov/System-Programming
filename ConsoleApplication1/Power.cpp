@@ -3,6 +3,28 @@
 using namespace std;
 
 void Power() {
-	cout << "\n\nСтепень" << endl;
+	int a, b, c;
+
+	cout << "\nВведите a: ";
+	cin >> a;
+
+	cout << "\nВведите b: " << endl;
+	cin >> b;
+
+	_asm {
+		mov eax, a
+		mov ebx, b
+
+		dec ebx
+
+		L1 :
+		mul a
+			dec ebx
+			jnz L1
+			mov c, eax
+	}
+
+	cout << "\nРезультат: " << c << endl;
+
 	system("pause");
 }
