@@ -75,7 +75,7 @@ int main() {
 			}
 		}
 
-		if (answer !=9)
+		if (answer !=5)
 			system("pause");
 
 		Sleep(150);
