@@ -4,11 +4,12 @@ using namespace std;
 
 void Power() {
 	int a, b, c;
+	cout << "\nВозведение числа в степень.\n";
 
-	cout << "\nВведите a: ";
+	cout << "\nВведите число, которое возводится в степень: ";
 	cin >> a;
 
-	cout << "\nВведите b: " << endl;
+	cout << "\nВведите степень числа: " << endl;
 	cin >> b;
 
 	_asm {
