@@ -99,7 +99,7 @@ void Calculator() {
 	}
 
 	printf("\nРезультат:");
-	printf("\n%d * %d = %d", a1, b1, bigmult);
+	printf("\n%d * %d = %d\n", a1, b1, bigmult);
 
 	system("pause");
 }
