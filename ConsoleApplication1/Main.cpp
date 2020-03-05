@@ -8,14 +8,12 @@ int main() {
 
 	int answer{ 0 };
 
-	void Menu(), Initials();
+	void Menu();
 	void task1(), task2();
 	void Calculator(), Power();
 
 	while (true) {
 		system("cls");
-		
-		Initials();
 
 		Menu();
 
