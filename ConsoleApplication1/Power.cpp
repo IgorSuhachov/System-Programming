@@ -4,6 +4,7 @@ using namespace std;
 
 void Power() {
 	int a, b, c;
+
 	cout << "\nВозведение числа в степень.\n";
 
 	cout << "\nВведите число, которое возводится в степень: ";
