@@ -4,7 +4,7 @@
 using namespace std;
 
 void task1() {
-	short a, s;
+	short a, b;
 
 	cout << "\n\n\tВариант 9\n\n";
 
@@ -23,10 +23,10 @@ void task1() {
 		mov ax, a
 		or ax, 01000001b
 	
-		mov s, ax
+		mov b, ax
 	}
 
-	cout << bitset<sizeof(s) * 4>(s) << endl;
+	cout << bitset<sizeof(b) * 4>(b) << endl;
 
 	system("pause");
 }
