@@ -3,7 +3,7 @@
 using namespace std;
 
 void Calculator() {
-	int a, b;
+	int a, b, a1, b1;
 	int sum, subt, bigmult;
 	int rem, divis;
 
@@ -75,8 +75,6 @@ void Calculator() {
 	}
 
 	printf("\n%d * %d = %d", am, bm, mult);
-
-	int a1, b1;
 
 	cout << "\n¬ведите числа a и b в диапазоне от 10000 до 200000:" << endl;
 	cin >> a1 >> b1;
