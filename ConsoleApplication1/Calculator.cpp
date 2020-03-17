@@ -7,13 +7,13 @@ void Calculator() {
 	int sum, subt, bigmult;
 	int rem, divis;
 
-	cout << "\n\n¬ведите a: ";
+	cout << "\n\nВведите a: ";
 	cin >> a;
 
-	cout << "\n¬ведите b: ";
+	cout << "\nВведите b: ";
 	cin >> b;
 
-	cout << "\n—ложение:";
+	cout << "\nСложение:";
 	_asm {
 		xor eax, eax;
 
@@ -26,7 +26,7 @@ void Calculator() {
 
 	printf("\n%d + %d = %d", a, b, sum);
 
-	cout << "\n\n¬ычитание: ";
+	cout << "\n\nВычитание: ";
 	_asm {
 		xor eax, eax;
 
@@ -39,7 +39,7 @@ void Calculator() {
 
 	printf("\n%d - %d = %d", a, b, subt);
 
-	cout << "\n\nƒеление:";
+	cout << "\n\nДеление:";
 	_asm {
 		xor eax, eax
 		xor ebx, ebx
@@ -56,13 +56,13 @@ void Calculator() {
 	}
 
 	printf("\n%d / %d = %d", a, b, divis);
-	printf("\nќстаток: %d", rem);
+	printf("\nОстаток: %d", rem);
 
 	short int am = a;
 	short int bm = b;
 	short int mult;
 
-	cout << "\n\n”множение:";
+	cout << "\n\nУмножение:";
 	_asm {
 		xor eax, eax;
 
@@ -76,21 +76,21 @@ void Calculator() {
 
 	printf("\n%d * %d = %d", am, bm, mult);
 
-	cout << "\n\n¬ведите числа a и b в диапазоне от 10000 до 200000:" << endl;
+	cout << "\n\nВведите числа a и b в диапазоне от 10000 до 200000:" << endl;
 
-	cout << "ѕервое число: ";
+	cout << "Первое число: ";
 	cin >> a1;
 
-	cout << "\n\n¬торое число: " << endl;
+	cout << "\n\nВторое число: " << endl;
 	cin >> b1;
 
 	while ((a1 < 9999) || (a1 > 200001) && (b1 < 9999) || (b1 > 200001)) {
-		cout << "¬ведите числа в правильном диапазоне" << endl;
+		cout << "Введите числа в правильном диапазоне" << endl;
 
-		cout << "ѕервое число: ";
+		cout << "Первое число: ";
 		cin >> a1;
 
-		cout << "\n\n¬торое число: " << endl;
+		cout << "\n\nВторое число: " << endl;
 		cin >> b1;
 	}
 
@@ -106,7 +106,7 @@ void Calculator() {
 		mov bigmult, edx
 	}
 
-	printf("\n–езультат:");
+	printf("\nРезультат:");
 	printf("\n%d * %d = %d\n", a1, b1, bigmult);
 
 	system("pause");
