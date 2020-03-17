@@ -1,9 +1,9 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 
 void task2() {
-	cout << "\n\nÏðàêòè÷åñêàÿ 2" << endl;
+	cout << "\n\nÐŸÑ€Ð°ÐºÑ‚Ð¸Ñ‡ÐµÑÐºÐ°Ñ 2" << endl;
 
 	system("pause");
 }

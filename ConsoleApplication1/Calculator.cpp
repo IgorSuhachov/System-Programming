@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 
 using namespace std;
 
@@ -7,13 +7,13 @@ void Calculator() {
 	int sum, subt, bigmult;
 	int rem, divis;
 
-	cout << "\n\nВведите a: ";
+	cout << "\n\nВ¬РІРµРґРёС‚Рµ a: ";
 	cin >> a;
 
-	cout << "\nВведите b: ";
+	cout << "\nВ¬РІРµРґРёС‚Рµ b: ";
 	cin >> b;
 
-	cout << "\nСложение:";
+	cout << "\nвЂ”Р»РѕР¶РµРЅРёРµ:";
 	_asm {
 		xor eax, eax;
 
@@ -26,7 +26,7 @@ void Calculator() {
 
 	printf("\n%d + %d = %d", a, b, sum);
 
-	cout << "\n\nВычитание: ";
+	cout << "\n\nВ¬С‹С‡РёС‚Р°РЅРёРµ: ";
 	_asm {
 		xor eax, eax;
 
@@ -39,7 +39,7 @@ void Calculator() {
 
 	printf("\n%d - %d = %d", a, b, subt);
 
-	cout << "\n\nДеление:";
+	cout << "\n\nЖ’РµР»РµРЅРёРµ:";
 	_asm {
 		xor eax, eax
 		xor ebx, ebx
@@ -56,13 +56,13 @@ void Calculator() {
 	}
 
 	printf("\n%d / %d = %d", a, b, divis);
-	printf("\nОстаток: %d", rem);
+	printf("\nСњСЃС‚Р°С‚РѕРє: %d", rem);
 
 	short int am = a;
 	short int bm = b;
 	short int mult;
 
-	cout << "\n\nУмножение:";
+	cout << "\n\nвЂќРјРЅРѕР¶РµРЅРёРµ:";
 	_asm {
 		xor eax, eax;
 
@@ -76,21 +76,21 @@ void Calculator() {
 
 	printf("\n%d * %d = %d", am, bm, mult);
 
-	cout << "\n\nВведите числа a и b в диапазоне от 10000 до 200000:" << endl;
+	cout << "\n\nВ¬РІРµРґРёС‚Рµ С‡РёСЃР»Р° a Рё b РІ РґРёР°РїР°Р·РѕРЅРµ РѕС‚ 10000 РґРѕ 200000:" << endl;
 
-	cout << "Первое число: ";
+	cout << "С•РµСЂРІРѕРµ С‡РёСЃР»Рѕ: ";
 	cin >> a1;
 
-	cout << "\n\nВторое число: " << endl;
+	cout << "\n\nВ¬С‚РѕСЂРѕРµ С‡РёСЃР»Рѕ: " << endl;
 	cin >> b1;
 
 	while ((a1 < 9999) || (a1 > 200001) && (b1 < 9999) || (b1 > 200001)) {
-		cout << "Введите числа в правильном диапазоне" << endl;
+		cout << "В¬РІРµРґРёС‚Рµ С‡РёСЃР»Р° РІ РїСЂР°РІРёР»СЊРЅРѕРј РґРёР°РїР°Р·РѕРЅРµ" << endl;
 
-		cout << "Первое число: ";
+		cout << "С•РµСЂРІРѕРµ С‡РёСЃР»Рѕ: ";
 		cin >> a1;
 
-		cout << "\n\nВторое число: " << endl;
+		cout << "\n\nВ¬С‚РѕСЂРѕРµ С‡РёСЃР»Рѕ: " << endl;
 		cin >> b1;
 	}
 
@@ -106,7 +106,7 @@ void Calculator() {
 		mov bigmult, edx
 	}
 
-	printf("\nРезультат:");
+	printf("\nвЂ“РµР·СѓР»СЊС‚Р°С‚:");
 	printf("\n%d * %d = %d\n", a1, b1, bigmult);
 
 	system("pause");
