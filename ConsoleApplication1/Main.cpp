@@ -10,6 +10,7 @@ int main() {
 
 	void Menu();
 	void task1(), task2();
+	void Sr1_1();
 	void Calculator(), Power();
 
 	while (true) {
@@ -17,9 +18,9 @@ int main() {
 
 		Menu();
 
-		for (int i = 0; i < 5; ++i) {
-			string menu[5] = { "| \t1. Калькулятор \t\t|","| \t2. Практическая 1 \t|","| \t3. Практическая 2 \t|",
-				"| \t4. Возведение в степень |","| \t5. Выход \t\t|" };
+		for (int i = 0; i < 6; ++i) {
+			string menu[6] = { "| \t1. Калькулятор \t\t\t\t|","| \t2. Практическая 1 \t\t\t|","| \t3. Практическая 2 \t\t\t|",
+				"| \t4. Возведение в степень \t\t|","| \t5. Задачи для самостоятельной работы \t|", "| \t6. Выход \t\t\t\t|" };
 			cout << endl;
 
 			if (i == answer) {
@@ -37,14 +38,14 @@ int main() {
 				answer -= 1;
 
 				if (answer == -1)
-					answer = 5;
+					answer = 6;
 				break;
 
 			}
 			else if (GetAsyncKeyState(VK_DOWN) != 0) { // control Down
 				answer += 1;
 
-				if (answer == 6)
+				if (answer == 7)
 					answer = 0;
 				break;
 
@@ -68,6 +69,10 @@ int main() {
 					break;
 
 				case 4:
+					Sr1_1();
+					break;
+
+				case 5:
 					exit(0);
 					break;
 				}
