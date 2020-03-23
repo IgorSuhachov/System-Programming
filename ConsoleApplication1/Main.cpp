@@ -10,9 +10,8 @@ int main() {
 
 	void Menu();
 	void task1(), task2();
-	void Sr1_1();
+	void Sr1_1(), Sort_array();
 	void Calculator(), Power();
-	void Sort_array();
 	void Do_While_cycle(), While_cycle();
 
 	while (true) {
