@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 
@@ -19,7 +19,7 @@ void Do_While_cycle() {
 		jne A
 	}
 
-	cout << "\nÎòâåò: " << x << endl;
+	cout << "\nÐžÑ‚Ð²ÐµÑ‚: " << x << endl;
 
 	system("pause");
 }

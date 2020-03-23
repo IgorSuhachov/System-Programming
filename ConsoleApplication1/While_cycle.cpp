@@ -1,14 +1,14 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 
 void While_cycle() {
 	int a, b, e, x{ 0 };
 
-	cout << "\nÂâåäèòå ÷èñëî a";
+	cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ a";
 	cin >> a;
 
-	cout << "\nÂâåäèòå ÷èñëî b\n";
+	cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ b\n";
 	cin >> b;
 
 	_asm {
@@ -33,7 +33,7 @@ void While_cycle() {
 		mov e, eax
 	}
 
-	cout << "\nÎòâåò: " << e << endl;
+	cout << "\nÐžÑ‚Ð²ÐµÑ‚: " << e << endl;
 
 	system("pause");
 }
